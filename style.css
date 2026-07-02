@@ -1,0 +1,184 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#00e5ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0b0b0b,#13293d,#000);
+position:relative;
+overflow:hidden;
+padding:20px;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.profile{
+width:190px;
+height:190px;
+border-radius:50%;
+border:5px solid #00e5ff;
+object-fit:cover;
+box-shadow:0 0 30px rgba(0,229,255,.4);
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:24px;
+color:#00e5ff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#00e5ff;
+color:#000;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:90px 8%;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:#151515;
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.08);
+}
+
+.container h2{
+font-size:36px;
+margin-bottom:20px;
+color:#00e5ff;
+}
+
+.container p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:#888;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.profile{
+width:150px;
+height:150px;
+}
+
+.container{
+padding:25px;
+}
+
+}window.addEventListener("load", () => {
+    document.body.style.opacity = "1";
+});
+
+console.log("Welcome to Ajay Maurya Official Website");
